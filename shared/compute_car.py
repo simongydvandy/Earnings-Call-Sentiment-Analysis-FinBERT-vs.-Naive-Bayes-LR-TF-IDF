@@ -1,10 +1,11 @@
 import numpy as np
 import pandas as pd
-import yfinance as yf
 from sklearn.model_selection import train_test_split
 
 
 def _fetch_abnormal_returns(ticker: str, earnings_date: str, window: int = 5):
+    import yfinance as yf
+
     # Day 0 is the next trading day after the earnings call (calls happen after close)
     day0 = pd.Timestamp(earnings_date) + pd.offsets.BDay(1)
     end = day0 + pd.offsets.BDay(window + 2)
