@@ -1,8 +1,14 @@
-from datasets import load_dataset
 import pandas as pd
 
 
 def load_transcripts() -> pd.DataFrame:
+    try:
+        from datasets import load_dataset
+    except ModuleNotFoundError as exc:
+        raise ModuleNotFoundError(
+            "The 'datasets' package is required to load transcripts. Install project dependencies first."
+        ) from exc
+
     ds = load_dataset("kurry/sp500_earnings_transcripts")
     df = ds["train"].to_pandas()
 
