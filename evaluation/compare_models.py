@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 from pathlib import Path
 import sys
 
@@ -91,7 +92,15 @@ def _load_default_dataset(csv_path: str | Path) -> pd.DataFrame:
 
 
 if __name__ == "__main__":
-    df = _load_default_dataset("transcripts_with_sentiment.csv")
+    parser = argparse.ArgumentParser(description="Compare model results on an enriched transcripts CSV.")
+    parser.add_argument(
+        "--csv",
+        default="transcripts_with_sentiment.csv",
+        help="Path to the enriched transcripts CSV.",
+    )
+    args = parser.parse_args()
+
+    df = _load_default_dataset(args.csv)
     baseline_results = run_all_label_variants(df)
     comparison = compare_models(df, baseline_results)
     print(comparison.to_string(index=False))

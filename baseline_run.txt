@@ -1,0 +1,4 @@
+{'model': 'TF-IDF + Naive Bayes', 'label_col': 'label_2', 'accuracy': 0.5134596211365903, 'precision': 0.5142857142857142, 'recall': 0.44955044955044954, 'f1': 0.47974413646055436, 'roc_auc': 0.5157597515806471}
+{'model': 'TF-IDF + Logistic Regression', 'label_col': 'label_2', 'accuracy': 0.5124626121635095, 'precision': 0.5113898976559921, 'recall': 0.5158175158175158, 'f1': 0.5135941644562334, 'roc_auc': 0.5164285134434389}
+{'model': 'TF-IDF + Naive Bayes', 'label_col': 'label_5', 'accuracy': 0.515785975407112, 'precision': 0.5215396380321182, 'recall': 0.6636393123580928, 'f1': 0.584070796460177, 'roc_auc': 0.5222955361627566}
+{'model': 'TF-IDF + Logistic Regression', 'label_col': 'label_5', 'accuracy': 0.5169491525423728, 'precision': 0.5285714285714286, 'recall': 0.528057087252676, 'f1': 0.5283141327275678, 'roc_auc': 0.5242535175311553}

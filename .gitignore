@@ -3,6 +3,7 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 *.csv
+transcripts_with_sentiment2.csv
 data/
 *.bin
 *.pt
