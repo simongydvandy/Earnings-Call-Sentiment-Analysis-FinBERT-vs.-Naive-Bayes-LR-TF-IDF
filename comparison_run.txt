@@ -1,0 +1,5 @@
+                       model label_col  accuracy  precision   recall       f1  roc_auc  avg_car_positive  avg_car_negative  ttest_p_value  sharpe_ratio
+TF-IDF + Logistic Regression   label_2  0.512463   0.511390 0.515818 0.513594 0.516429          0.001023         -0.000143       0.092884      0.038693
+        TF-IDF + Naive Bayes   label_2  0.513460   0.514286 0.449550 0.479744 0.515760          0.001366         -0.000269       0.018853      0.051820
+        TF-IDF + Naive Bayes   label_5  0.515786   0.521540 0.663639 0.584071 0.522296          0.002222         -0.000215       0.027209      0.058392
+TF-IDF + Logistic Regression   label_5  0.516949   0.528571 0.528057 0.528314 0.524254          0.001670          0.001063       0.552664      0.044144
